@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alzheimer's Data Dashboard</title>
+</head>
+<body>
+    <h1>Alzheimer's Disease Dashboard</h1>
+
+    <form method="POST">
+        <label for="gender">Select Gender:</label>
+        <select name="gender">
+            <option value="All">All</option>
+            <option value="Male" {% if gender == "Male" %}selected{% endif %}>Male</option>
+            <option value="Female" {% if gender == "Female" %}selected{% endif %}>Female</option>
+        </select>
+
+        <label for="age_group">Select Age Group:</label>
+        <select name="age_group">
+            <option value="All">All</option>
+            <option value="60–69" {% if age_group == "60–69" %}selected{% endif %}>60–69</option>
+            <option value="70–79" {% if age_group == "70–79" %}selected{% endif %}>70–79</option>
+            <option value="80–89" {% if age_group == "80–89" %}selected{% endif %}>80–89</option>
+            <option value="90+" {% if age_group == "90+" %}selected{% endif %}>90+</option>
+        </select>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+        <button type="submit">Update</button>
+    </form>
+
+    <div>
+        {{ plot | safe }}
+    </div>
+</body>
+</html>
