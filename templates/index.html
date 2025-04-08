@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alzheimer's Data Dashboard</title>
+    
+    <!-- Link to the favicon using Flask's url_for -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <h1>Alzheimer's Disease Dashboard</h1>
@@ -22,7 +27,6 @@
             <option value="80–89" {% if age_group == "80–89" %}selected{% endif %}>80–89</option>
             <option value="90+" {% if age_group == "90+" %}selected{% endif %}>90+</option>
         </select>
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
         <button type="submit">Update</button>
     </form>
