@@ -60,7 +60,7 @@ We acknowledge the importance of ethical data use in healthcare research. This p
 
 Dataset: cleaned_alzheimers_disease_data.csv provided via Kaggle
 
-## Contributors
+## 👥 Contributors
 - **Haby Sarr**
 
 - **Krishna Sigde**
