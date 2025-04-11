@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alzheimer's Chart Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    select {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    #chart-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    canvas {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alzheimer's Data Visualizer</h1>
+
+  <select id="data-selection">
+    <option value="">-- Select Chart --</option>
+    <option value="chart1">Chart 1: Gender Distribution</option>
+    <option value="chart2">Chart 2: Age Distribution</option>
+    <option value="chart3">Chart 3: Diagnosis Breakdown</option>
+  </select>
+
+  <div id="chart-container">
+    <p style="text-align: center; color: #777;">Select a chart from the dropdown above to visualize the data.</p>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./logic/js/app.js"></script>
+
+</body>
+</html>
