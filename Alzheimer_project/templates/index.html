@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alzheimer's Demographics Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    canvas {
+      display: block;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 500px;
+      height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Ethnicity Distribution by Age Range</h2>
+  <canvas id="ethnicityChart" width="500" height="250"></canvas>
+
+  <h2 style="text-align:center;">Gender Distribution by Age Range</h2>
+  <canvas id="genderChart" width="500" height="250"></canvas>
+
+  
+   <script src="/statics/json/logic.js"></script>
+   <script src="https://d3js.org/d3.v7.min.js"></script>
+   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+  </script>
+</body>
+</html>
