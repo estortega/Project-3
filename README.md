@@ -12,7 +12,7 @@ This project uses a dataset of over 2,000 patient records to explore patterns in
 - **Backend**: Flask (API routes for interactive visualizations)
 - **Python Libraries**:
   - `Pandas`, `Matplotlib`, `Seaborn`
-  -  **New Library**: `Altair`
+  
 - **Frontend/Interactivity**:
   - HTML with dropdowns and filters
   - Flask API dynamically serving charts based on user input
