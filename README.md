@@ -44,7 +44,7 @@ This project uses a dataset of over 2,000 patient records to explore patterns in
    - *Visualization:* Box plots, bar charts, grouped visuals by age/gender
 
 ---
-
+ 
 ## ⚖️ Ethical Considerations
 
 We acknowledge the importance of ethical data use in healthcare research. This project makes every effort to:
